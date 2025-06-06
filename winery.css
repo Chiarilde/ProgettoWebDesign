@@ -494,6 +494,16 @@ footer img {
 
         order: 2;
     }
+    .popup.active {
+        max-width: 350px;
+    }
+    .popup-title {
+        font-size: 20px;
+    }
+    .close-btn {
+        top: 0;
+        right: 0;
+    }
 }
 
 @media (max-width: 650px) {
