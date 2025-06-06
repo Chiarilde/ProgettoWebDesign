@@ -1,0 +1,328 @@
+/* Body & Container */
+body {
+    background-color: #ffff;
+    font-family: "Nunito";
+}
+
+.grid-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.card-body {
+    background-color: #dacfa2;
+    text-align: center;
+    align-items: center;
+}
+
+.image-card {
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.btn-primary {
+    background-color: #b46369;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #baca1d;
+}
+
+/* Stile dell'header */
+header {
+    background: #fff;
+    height: 250px;
+}
+.header__image {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    display: block;
+    background-repeat: no-repeat;
+}
+.header__image:hover {
+    transform: translateY(-10px); /* Sposta l'immagine verso l'alto */
+}
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.header__menu__item {
+    display: flex;
+    flex-direction: column; /* Testo sotto l'immagine */
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.header__image {
+    width: 130px; /* Regola la dimensione dell'immagine */
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.header__menu__item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin-top: 8px;
+    text-align: center;
+    transition: color 0.3s;
+}
+.header__menu__item a:hover {
+    color: #baca1d;
+}
+
+a {
+    color: black;
+    margin-left: 5px;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+.i a {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    color: black !important;
+    padding: 10px;
+}
+.copyright {
+    position: absolute;
+    top: -120px;
+    left: -40px;
+    height: 240px;
+    transform: rotate(300deg);
+    z-index: 100;
+}
+.all-cards {
+    margin-top: 120px !important;
+}
+
+/* Hero Section */
+.cover {
+    position: relative;
+    background-image: url("./images/campagnaToscana.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    overflow: hidden;
+}
+.cover::before,
+.cover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 150px; /* Regola l'altezza del gradiente */
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 1;
+}
+.cover::after {
+    top: auto;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Overlay bianco semi-trasparente */
+
+    width: 100%;
+}
+.content {
+    z-index: 2; /* Sopra l'overlay */
+}
+.text-body-secondary {
+    color: #b46369;
+}
+.text-body-secondary a {
+    color: #ffffff !important;
+}
+ul {
+    margin-top: 20px;
+}
+p.text-body-secondary {
+    margin-left: 15px;
+    font-style: italic;
+}
+.main {
+    font-family: "Nunito";
+    position: relative;
+    background-image: url("./images/contact.png");
+    background-size: cover;
+    background-position: center;
+}
+.main::before,
+.main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px; /* Regola l'altezza del gradiente */
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 1;
+}
+.main::after {
+    top: auto;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+.signin .content {
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #e1ded7;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11100e;
+    padding: 40px 20px;
+    color: #ffffff;
+    margin: 0 !important;
+    gap: 2rem;
+}
+footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #baca1d !important;
+}
+a.nav-link.p-0.text-body-secondary:hover {
+    color: #baca1d !important;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    margin: 5px 0;
+}
+.grappolo {
+    transform: rotate(55deg);
+    transform: translate(65px, 20px);
+    max-width: 200px;
+    display: none;
+}
+.contenitore-immagine {
+    width: 250px;
+    height: 250px;
+    overflow-x: hidden;
+    position: absolute;
+    top: -90px;
+    right: 0;
+    z-index: 100;
+}
+li p {
+    font-size: 20px;
+    color: #baca1d;
+}
+p,
+h2 {
+    font-style: italic;
+}
+.social-icons a svg {
+    margin-top: 4px;
+    margin-right: 4px;
+    width: 25px;
+    height: 25px;
+    fill: #baca1d;
+    transition: fill 0.3s;
+}
+.social-icons a:hover svg {
+    fill: #b46369;
+}
+.text-body-secondary {
+    color: #b46369;
+}
+.i a {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding: 10px;
+}
+
+/* Media Queries - Responsiveness */
+@media (max-width: 1060px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    footer p.text-body-secondary {
+        order: 4;
+        margin-top: 10px;
+    }
+    .grappolo {
+        display: block;
+    }
+}
+@media (max-width: 578px) {
+    .copyright,
+    .grappolo {
+        display: none;
+    }
+}
+@media (max-width: 578px) {
+    .header__image,
+    .header__menu a {
+        scale: 70%;
+    }
+}
+@media (max-width: 80px) {
+    .header__image,
+    .header__menu a {
+        scale: 60%;
+    }
+}

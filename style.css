@@ -1,0 +1,336 @@
+/* Body & Container */
+body,
+html {
+    font-family: "Nunito";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+h1 {
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+h3 {
+    color: #0c1902;
+    margin: 70px 0 0 20px;
+}
+h2 {
+    color: #0c1902;
+    font-size: 25px;
+    text-align: center;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+h5 {
+    color: #baca1d;
+}
+h6 {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+/* Navbar */
+.navbar p {
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+.navbar {
+    z-index: 100;
+}
+a.nav-link {
+    color: #0c1902 !important;
+}
+.nav-link.active {
+    text-decoration: underline;
+}
+li {
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 14px;
+    color: #0c1902;
+}
+
+/* Hero Section */
+.main {
+    position: relative;
+    background-image: url(./images/panoramaMain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.col-12 {
+    overflow-x: hidden;
+}
+.col-12,
+.all-cards {
+    background-color: #f9f6f1;
+}
+.btn-primary,
+.btn-secondary {
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+    font-family: "Nunito";
+}
+.btn-secondary {
+    background-color: #634161;
+}
+.btn-primary {
+    background-color: #baca1d;
+}
+
+/* Card in hero section */
+.small-container {
+    right: 50px;
+    bottom: 50px;
+    background-color: #0c1902;
+    height: 180px;
+    width: 250px;
+}
+.angle {
+    background-color: #baca1d;
+    height: 30px;
+    width: 30px;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 10px 0;
+    cursor: pointer;
+}
+.angle2 {
+    background-color: #baca1d;
+    height: 50px;
+    width: 30px;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Footer & Social Icons */
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+footer .grappolo {
+    position: absolute;
+    top: -90px;
+    right: -100px;
+    z-index: 100;
+}
+footer a.nav-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    text-align: left;
+}
+footer a:hover {
+    color: #baca1d !important;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    margin: 5px 0;
+}
+li p {
+    font-size: 20px;
+    color: #baca1d;
+    text-align: left;
+}
+.social-icons {
+    text-align: left;
+}
+.social-icons a svg {
+    margin-top: 4px;
+    margin-right: 4px;
+    width: 25px;
+    height: 25px;
+    fill: #baca1d;
+    transition: fill 0.3s;
+    text-align: left;
+}
+.social-icons a:hover svg {
+    fill: #b46369;
+}
+.vitigno-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    height: 8rem;
+    width: 20rem;
+}
+.vitigno {
+    transform: rotate(205deg);
+    height: 200%;
+}
+.button {
+    text-align: center;
+}
+
+/* Copyright style */
+p.text-body-secondary {
+    color: #b46369 !important;
+    font-style: italic;
+}
+.container2 {
+    bottom: 0;
+}
+.card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.3s ease-out;
+}
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.header__menu {
+    display: flex; /* MENU visibile di default su desktop */
+    height: auto; /* altezza normale */
+    overflow: visible;
+    transition: height 0.3s ease;
+    width: 100%;
+}
+.header__menu__item {
+    display: none;
+}
+.header__menu__item a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #f9f6f1;
+    z-index: 100;
+    font-size: 24px;
+    font-family: "Nunito";
+    color: #634161;
+    font-weight: bold;
+}
+.header__menu__item a:hover {
+    text-decoration: underline;
+}
+.header__icon-bar {
+    float: right;
+    padding: 20px;
+    display: none;
+}
+.header__icon-bar span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    margin-bottom: 5px;
+}
+
+/* Hover Effects */
+.btn-primary:hover,
+.btn-secondary:hover,
+.angle:hover,
+.angle2:hover {
+    background-color: #b46369;
+}
+a.nav-link:hover {
+    color: #baca1d !important;
+}
+
+/* Media Queries - Responsiveness */
+@media (max-width: 768px) {
+    .vitigno {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center !important;
+    }
+    footer > p {
+        order: 2 !important;
+    }
+    footer a.nav-link,
+    .social-icons,
+    li p {
+        text-align: center;
+    }
+    .container2 {
+        bottom: 15%;
+        margin: auto !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .centrato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h5,
+    h1 {
+        text-align: center;
+        padding: 10px;
+    }
+    p {
+        text-align: center;
+    }
+    .btn-primary,
+    .btn-secondary {
+        margin: 0;
+    }
+    .grappolo {
+        display: none;
+    }
+}
+@media (max-width: 450px) {
+    h1 {
+        font-size: 35px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1250px) {
+    .grappolo {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .header__menu {
+        display: block; /* importante: per far funzionare height */
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    .header__bar.is_white {
+        background-color: #f9f6f1;
+    }
+    .is_white > a.header__icon-bar span {
+        background-color: #000;
+    }
+    .header__menu.is-open {
+        height: 345px;
+        background-color: #f9f6f1;
+        padding: 0;
+        position: relative; /* se vuoi puoi mettere z-index */
+        z-index: 10000;
+    }
+
+    .header__menu__item {
+        display: block;
+    }
+    .header__icon-bar {
+        display: block;
+        cursor: pointer;
+    }
+}

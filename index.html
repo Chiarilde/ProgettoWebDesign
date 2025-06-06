@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Gleras Wines</title>
+        <link
+            rel="icon"
+            href="images/logo1-removebg-preview.png"
+            type="favicon"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-0 col-lg-2">
+                    <nav
+                        class="navbar fixed-top vh-100 col-2 col-sm-0 bg-body-tertiary d-flex justify-content-between align-self-center flex-column d-none d-lg-flex d-xl-flex"
+                    >
+                        <div
+                            class="container d-flex justify-content-center align-items-center"
+                        >
+                            <a
+                                class="navbar-brand d-flex justify-content-center align-items-center m-0 flex-column"
+                                href="#"
+                            >
+                                <img
+                                    src="./images/logo1-removebg-preview.png"
+                                    alt="immagine di grappolo d'uva"
+                                    width="100"
+                                    height="100"
+                                />
+                                <h2>GLERAS<br />WINES</h2>
+                            </a>
+                        </div>
+                        <ul
+                            class="nav flex-column d-flex justify-content-center align-items-center"
+                        >
+                            <li class="nav-item fw-bolder fs-6">
+                                <a
+                                    class="nav-link"
+                                    id="about-link"
+                                    href="./aboutus.html"
+                                    >ABOUT US</a
+                                >
+                            </li>
+                            <li class="nav-item fw-bolder fs-6">
+                                <a
+                                    class="nav-link"
+                                    id="wines-link"
+                                    href="#wines"
+                                    >WINES</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-bolder fs-6"
+                                    id="winery-link"
+                                    href="./winery.html"
+                                    >WINERY</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link fw-bolder fs-6"
+                                    id="contact-link"
+                                    href="./contact.html"
+                                    >CONTACT US</a
+                                >
+                            </li>
+                        </ul>
+
+                        <div class="d-flex flex-column align-items-center">
+                            <img
+                                src="./images/uva1.png"
+                                width="100px"
+                                style="margin-bottom: 20px"
+                                height="80px"
+                                alt="immagine di ramo d'uva"
+                            />
+                            <p>
+                                Explore our wine tasting<br />
+                                and events by clicking <br />
+                                here
+                            </p>
+                            <a
+                                href="./tastings.html"
+                                class="angle2 d-flex justify-content-center align-items-center"
+                            >
+                                <i
+                                    class="fa-sharp fa-solid fa-arrow-down"
+                                    style="color: #faf9fa; height: fit-content"
+                                ></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-12 p-0 col-lg-10">
+                    <div class="main">
+                        <div class="header__bar">
+                            <a href="" class="header__icon-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <ul class="header__menu animate">
+                                <li class="header__menu__item">
+                                    <a href="aboutus.html">ABOUT US</a>
+                                </li>
+                                <li class="header__menu__item">
+                                    <a href="#wines">WINES</a>
+                                </li>
+                                <li class="header__menu__item">
+                                    <a href="winery.html">WINERY</a>
+                                </li>
+                                <li class="header__menu__item">
+                                    <a href="contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="container2 position-absolute mb-5 ms-5">
+                            <h1>
+                                Gleras Wines,<br />
+                                your winery<br />
+                                at fingerprints
+                            </h1>
+                            <h5 class="text-white">
+                                Experience the magic of local wineyard and taste
+                                excellent wines.
+                            </h5>
+                            <div class="centrato">
+                                <button
+                                    type="button"
+                                    class="btn btn-primary rounded-pill text-white border-0 btn-lg mt-4"
+                                    onclick="window.location.href='./tastings.html';"
+                                >
+                                    TASTINGS
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary rounded-pill text-white border-0 btn-lg mt-4"
+                                    onclick="window.location.href='./tastings.html';"
+                                >
+                                    TOURS
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="small-container position-absolute rounded text-white d-none d-xl-flex d-xxl-flex"
+                        >
+                            <div
+                                class="inner container d-flex flex-column justify-content-center gap-3"
+                            >
+                                <h5>PROSECCO DOC</h5>
+                                <div
+                                    class="container inner d-flex flex-row justify-content-between"
+                                >
+                                    <img
+                                        src="./images/geo.png"
+                                        width="15px"
+                                        height="15px"
+                                        alt="icona di pin geografico"
+                                    />
+                                    <h6>
+                                        VALDOBBIADENE,<br />
+                                        ITALY
+                                    </h6>
+                                    <img
+                                        src="./images/person.png"
+                                        width="15px"
+                                        height="15px"
+                                        alt="icona stilizzata di persona"
+                                    />
+                                    <h6>2-8</h6>
+                                </div>
+                                <div class="d-flex px-3">
+                                    <img
+                                        src="./images/price.png"
+                                        width="15px"
+                                        height="15px"
+                                        alt="icona di prezzo"
+                                    />
+                                    <h6 class="text-start px-3 fs-6 text">
+                                        € 76,00 / <em> per bottle</em>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div
+                                class="angle position-absolute d-flex justify-content-center align-items-center"
+                            >
+                                <i
+                                    class="fa-sharp fa-solid fa-arrow-right"
+                                    style="color: #faf9fa"
+                                ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>OUR BESTSELLERS</h3>
+                    <div
+                        id="wines"
+                        class="all-cards d-flex flex-wrap flex-row gap-4 mt-5 mb-5 px-3 justify-content-evenly"
+                    >
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/redwine.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino rosso"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">BARDOLINO</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/vinobianco.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino bianco"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">SOAVE</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/redwine.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino rosso"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">AMARONE</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/vinobianco.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino bianco"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">PROSECCO</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>MORE WINES</h3>
+                    <div
+                        id="wines"
+                        class="all-cards d-flex flex-wrap flex-row gap-4 mt-5 mb-5 px-3 justify-content-evenly"
+                    >
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/redwine.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino rosso"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">BARDOLINO</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/vinobianco.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino bianco"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">SOAVE</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/redwine.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino rosso"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">AMARONE</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/vinobianco.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino bianco"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">PROSECCO</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        id="wines"
+                        class="all-cards d-flex flex-wrap flex-row gap-4 mt-5 mb-5 px-3 justify-content-evenly"
+                    >
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/redwine.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino rosso"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">BARDOLINO</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/vinobianco.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino bianco"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">SOAVE</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/redwine.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino rosso"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">AMARONE</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="card border-0"
+                            style="width: 14rem; height: 30rem"
+                        >
+                            <img
+                                src="./images/vinobianco.webp"
+                                class="card-img-top object-fit-cover"
+                                width="286px"
+                                height="200px"
+                                alt="bicchiere di vino bianco"
+                            />
+                            <div
+                                class="card-body d-flex flex-column justify-content-between rounded-3 w-98"
+                            >
+                                <h5 class="card-title">PROSECCO</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
+                                </p>
+                                <p class="button">
+                                    <a
+                                        href="#"
+                                        class="btn btn-primary rounded-pill border-0 text-white"
+                                        style="line-height: 2"
+                                        >BUY NOW</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer
+                        class="row row-cols-1 row-cols-sm-1 row-cols-md-5 d-flex"
+                    >
+                        <p class="text-body-secondary">
+                            © 2025 Gleras Wines. All rights reserved.
+                        </p>
+
+                        <div class="col mb-3"></div>
+
+                        <div class="col mb-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Events</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Press</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Careers</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col mb-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Terms and Conditions</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Cookie Policy</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >FAQs</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col mb-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Contact Information</a
+                                    >
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Social Media</a
+                                    >
+                                    <div class="social-icons">
+                                        <a href="#" aria-label="Facebook"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M22.675 0H1.325A1.325 1.325 0 0 0 0 1.325v21.351A1.325 1.325 0 0 0 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.787 4.658-4.787 1.325 0 2.466.099 2.797.143v3.243l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.312h3.59l-.467 3.622h-3.123V24h6.116A1.325 1.325 0 0 0 24 22.675V1.325A1.325 1.325 0 0 0 22.675 0z"
+                                                /></svg
+                                        ></a>
+                                        <a href="#" aria-label="Instagram"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.303 3.608 1.278.975.975 1.216 2.243 1.278 3.608.058 1.266.07 1.646.07 4.851s-.012 3.585-.07 4.851c-.062 1.366-.303 2.633-1.278 3.608-.975.975-2.243 1.216-3.608 1.278-1.266.058-1.646.07-4.851.07s-3.585-.012-4.851-.07c-1.366-.062-2.633-.303-3.608-1.278-.975-.975-1.216-2.243-1.278-3.608C2.175 15.585 2.163 15.205 2.163 12s.012-3.585.07-4.851c.062-1.366.303-2.633 1.278-3.608.975-.975 2.243-1.216 3.608-1.278 1.266-.058 1.646-.07 4.851-.07m0-2.163C8.755 0 8.324.012 7.051.071 5.634.13 4.313.471 3.3 1.485.983 3.802.983 8.198.983 12s0 8.198 2.317 10.515C4.313 23.53 5.634 23.87 7.051 23.929 8.324 23.988 8.755 24 12 24s3.676-.012 4.949-.071c1.417-.059 2.738-.4 3.751-1.415C23.017 20.198 23.017 15.802 23.017 12s0-8.198-2.317-10.515C19.676.471 18.355.13 16.949.071 15.676.012 15.245 0 12 0z"
+                                                /></svg
+                                        ></a>
+                                        <a href="#" aria-label="Twitter"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M23.953 4.569a10.015 10.015 0 0 1-2.825.775 4.934 4.934 0 0 0 2.163-2.723 9.868 9.868 0 0 1-3.127 1.184 4.921 4.921 0 0 0-8.379 4.482A13.978 13.978 0 0 1 1.67 3.149a4.905 4.905 0 0 0-.666 2.475 4.92 4.92 0 0 0 2.188 4.1 4.903 4.903 0 0 1-2.228-.616v.061a4.93 4.93 0 0 0 3.946 4.827 4.899 4.899 0 0 1-2.224.085 4.937 4.937 0 0 0 4.604 3.417A9.865 9.865 0 0 1 0 19.54a13.941 13.941 0 0 0 7.548 2.212c9.057 0 14.009-7.507 14.009-14.01 0-.214-.004-.426-.015-.637A10.025 10.025 0 0 0 24 4.59z"
+                                                /></svg
+                                        ></a>
+                                    </div>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a
+                                        href="#"
+                                        class="nav-link p-0 text-body-secondary"
+                                        >Telephone</a
+                                    >
+                                    <p>+0018899100</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <img
+                            class="grappolo"
+                            src="./images/uva5.png"
+                            alt="immagine di un grappolo"
+                        />
+                        <div class="vitigno-container">
+                            <img
+                                class="vitigno"
+                                src="./images/uva1.png"
+                                alt="immagine di un ramo"
+                            />
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
