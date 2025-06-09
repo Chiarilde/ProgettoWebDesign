@@ -75,7 +75,7 @@ textarea {
 @media (max-width: 768px) {
     .form-container {
         width: 90%;
-        padding: 30px 40px;
+
         overflow: hidden;
     }
     h2 {
@@ -106,29 +106,40 @@ img {
     padding: 10px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
-    body,
-    html {
+    html,
+    body {
         height: 100vh;
-        width: 100vw;
+        max-width: 100%;
+        overflow-x: hidden;
     }
+
     .contact-form {
         width: 100%;
+        padding: 0;
     }
+
     .form-container {
         padding: 20px 30px;
         box-sizing: border-box;
+        max-width: 100%;
     }
+
     .form-container > img {
         display: none;
+        padding: 0;
     }
+
     h2 {
         font-size: 18px;
     }
+
     input,
     textarea {
         padding: 10px;
         box-sizing: border-box;
+        width: 100%;
     }
+
     .submit-btn {
         padding: 10px 15px;
     }
