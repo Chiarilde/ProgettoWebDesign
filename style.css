@@ -55,10 +55,10 @@ a.nav-link {
 li {
     text-align: center;
     font-family: "Nunito";
-    font-size: 14px;
+    font-size: 16px;
     color: #0c1902;
 }
-img {
+.mobile_v_logo {
     max-width: 120px;
 }
 /* Hero Section */
@@ -277,6 +277,7 @@ a.nav-link:hover {
         flex-direction: column;
         align-items: center;
     }
+
     h5,
     h1 {
         text-align: center;
@@ -296,9 +297,6 @@ a.nav-link:hover {
 @media (max-width: 450px) {
     h1 {
         font-size: 35px;
-    }
-    h5 {
-        font-size: 16px;
     }
 }
 @media (max-width: 1250px) {

@@ -291,7 +291,9 @@ h2 {
     color: white;
     padding: 10px;
 }
-
+a {
+    font-style: normal;
+}
 /* Media Queries - Responsiveness */
 @media (max-width: 1060px) {
     footer {
@@ -328,9 +330,3 @@ h2 {
         display: none;
     }
 }
-/* @media (max-width: 80px) {
-    .header__image,
-    .header__menu a {
-        scale: 60%;
-    }
-} */
