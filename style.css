@@ -58,7 +58,9 @@ li {
     font-size: 14px;
     color: #0c1902;
 }
-
+img {
+    max-width: 120px;
+}
 /* Hero Section */
 .main {
     position: relative;
@@ -205,12 +207,12 @@ p.text-body-secondary {
     transition: height 0.3s ease;
     width: 100%;
 }
-.header__menu__item {
+.header__menu__item a {
     display: none;
 }
 .header__menu__item a {
     display: block;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     background-color: #f9f6f1;
     z-index: 100;
@@ -224,7 +226,7 @@ p.text-body-secondary {
 }
 .header__icon-bar {
     float: right;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     display: none;
 }
 .header__icon-bar span {
@@ -319,7 +321,7 @@ a.nav-link:hover {
         background-color: #000;
     }
     .header__menu.is-open {
-        height: 345px;
+        height: 380px;
         background-color: #f9f6f1;
         padding: 0;
         position: relative; /* se vuoi puoi mettere z-index */

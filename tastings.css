@@ -308,21 +308,29 @@ h2 {
         display: block;
     }
 }
-@media (max-width: 578px) {
-    .copyright,
-    .grappolo {
-        display: none;
+@media (max-width: 840px) {
+    .header__menu__item {
+        scale: 70%;
     }
 }
 @media (max-width: 578px) {
     .header__image,
     .header__menu a {
         scale: 70%;
+        margin: 0;
+    }
+    .header__menu__item {
+        scale: 70%;
+        margin: 0;
+    }
+    .copyright,
+    .grappolo {
+        display: none;
     }
 }
-@media (max-width: 80px) {
+/* @media (max-width: 80px) {
     .header__image,
     .header__menu a {
         scale: 60%;
     }
-}
+} */
