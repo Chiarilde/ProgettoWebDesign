@@ -169,6 +169,10 @@ h2 {
         font-size: 16px;
         padding: 10px;
     }
+    .overlay {
+        border-top: 1px solid #e1ded7;
+        border-left: none;
+    }
     footer {
         display: flex;
         flex-direction: column;
