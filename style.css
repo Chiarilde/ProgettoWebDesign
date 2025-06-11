@@ -210,7 +210,7 @@ p.text-body-secondary {
 .header__menu__item {
     display: none;
 }
-.header__menu__item a {
+.header__menu__item {
     display: block;
     padding: 10px;
     text-decoration: none;
