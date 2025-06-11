@@ -90,6 +90,10 @@ li {
     background-color: #baca1d;
 }
 
+.header__bar {
+    display: none;
+}
+
 /* Card in hero section */
 .small-container {
     right: 50px;
@@ -210,7 +214,7 @@ p.text-body-secondary {
 .header__menu__item {
     display: none;
 }
-.header__menu__item {
+.header__menu__item a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -311,6 +315,9 @@ a.nav-link:hover {
         height: 0;
         overflow: hidden;
         padding: 0;
+    }
+    .header__bar {
+        display: block;
     }
     .header__bar.is_white {
         background-color: #f9f6f1;
